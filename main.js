@@ -27,8 +27,6 @@
     height: 216px;
     background-color: #FFF;
     border: 10px solid #000;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
     border-radius: 100px;
     z-index: 100;
     transform: translate(-50%, -50%);
@@ -42,8 +40,6 @@
     width: 24px;
     height: 30px;
     background-color: #000;
-    -moz-border-radius: 18px;
-    -webkit-border-radius: 18px;
     border-radius: 18px;
 }
 /*画右边眼睛*/
@@ -60,8 +56,6 @@
     height: 24px;
     background-color: #FFB827;
     border: 6px solid #000;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
     border-radius: 25px;
 }
 /*画胡须啦*/
@@ -74,12 +68,7 @@
     position: absolute;
     width: 26px;
     height: 10px;
-    -moz-border-radius: 0 20px 15px 0;
-    -webkit-border-radius: 0 20px 15px 0;
     border-radius: 0 20px 15px 0;
-    -moz-transform: rotate(6deg);
-    -ms-transform: rotate(6deg);
-    -o-transform: rotate(6deg);
     -webkit-transform: rotate(6deg);
     z-index: 150;
     top: 60%;
@@ -96,13 +85,7 @@
     z-index: 150;
     top: 45%;
     left: -145%;
-    -moz-border-radius: 36px 20px 13px 14pxx;
-    -webkit-border-radius: 36px 20px 13px 14pxx;
     -webkit-transform: rotate(-15deg);
-    -moz-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-   
 }
 /*左边第二根*/
 .leftwhiskers.two {
@@ -114,11 +97,6 @@
     z-index: 150;
     top: 72%;
     left: -8%;
-    -moz-border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    -moz-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
 }
 /*左边第三根*/
 .leftwhiskers.three {
@@ -130,11 +108,6 @@
     left: 0%;
     -webkit-transform: rotate(-25deg);
     border-radius: 20px 20px 20px 20px;
-    -moz-border-radius:  20px 20px 20px 20px;
-    -webkit-border-radius:  20px 20px 20px 20px;
-    -moz-transform: rotate(-25deg);
-    -ms-transform: rotate(-25deg);
-    -o-transform: rotate(-25deg); 
 }
 .leftwhiskers.three::before {
     position: absolute;
@@ -148,11 +121,6 @@
     z-index: 150;
     top: 34%;
     left: -74%;
-    -moz-border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px; 
-    -moz-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
 }
 /*右边胡须一样哒*/
 .rightwhiskers.one {
@@ -164,11 +132,6 @@
     z-index: 150;
     top: 60%;
     right: 0;
-    -moz-transform: rotate(-6deg);
-    -ms-transform: rotate(-6deg);
-    -o-transform: rotate(-6deg);
-    -moz-border-radius: 20px 0px 0px 15px;
-    -webkit-border-radius: 20px 0px 0px 15px;
 }
 
 .rightwhiskers.one::before {
@@ -183,11 +146,6 @@
     z-index: 150;
     top: 45%;
     right: -145%;
-    -moz-border-radius: 20px 36px 14px 13px;
-    -webkit-border-radius: 20px 36px 14px 13px;
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
 }
 
 .rightwhiskers.two {
@@ -199,11 +157,6 @@
     z-index: 150;
     top: 72%;
     right: -8%;
-    -moz-border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
 }
 
 .rightwhiskers.three {
@@ -215,11 +168,6 @@
     z-index: 150;
     top: 82%;
     right: 0%;
-    -moz-border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    -moz-transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    -o-transform: rotate(25deg);
 }
 
 .rightwhiskers.three::before {
@@ -234,11 +182,6 @@
     z-index: 150;
     top: 34%;
     right: -74%;
-    -moz-border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px; 
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
 }
 /*左边耳朵*/
 .left-ear {
@@ -252,11 +195,6 @@
     border-right-color: transparent;
     border-radius: 30px 77px 60px 84px;
     transform: rotate(12deg);
-    -moz-border-radius: 30px 77px 60px 84px;
-    -webkit-border-radius: 30px 77px 60px 84px;
-    -moz-transform: rotate(14deg);
-    -ms-transform: rotate(14deg);
-    -o-transform: rotate(14deg);
     -webkit-transform: rotate(14deg);
     -webkit-backface-visibility: hidden;
 }
@@ -284,12 +222,7 @@
     border-right-color: transparent;
     border-radius: 30px 77px 60px 84px;
     transform: rotate(86deg);
-    -moz-border-radius: 20px 37px 20px 44px;
-    -webkit-border-radius: 20px 37px 20px 44px;
-    -moz-transform: rotate(14deg);
-    -ms-transform: rotate(14deg);
-    -o-transform: rotate(14deg);
-    -webkit-transform: rotate(14deg);
+    -webkit-transform: rotate(82deg);
     -webkit-backface-visibility: hidden;
 }
 
@@ -323,11 +256,6 @@
     border-radius: 30px;
     z-index: 2;
     -webkit-transform: rotate(20deg);
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
 }
 
 .left {
@@ -340,11 +268,6 @@
     border: 8px solid #000;
     border-radius: 50px 50px 55px 46px;
     -webkit-transform: rotate(19deg);
-    -moz-border-radius: 50px 50px 55px 46px;
-    -webkit-border-radius: 50px 50px 55px 46px;
-    -moz-transform: rotate(19deg);
-    -ms-transform: rotate(19deg);
-    -o-transform: rotate(19deg);
 }
 
 .left::before {
@@ -357,8 +280,6 @@
     height: 28px;
     border: 6px solid #000;
     border-radius: 30px;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
     
 }
 
@@ -371,12 +292,7 @@
     background-color: #F51F27;
     border: 8px solid #000;
     border-radius: 78px 48px 60px 63px;
-    -moz-border-radius: 78px 48px 60px 63px;
     -webkit-transform: rotate(22deg);
-    -webkit-border-radius: 78px 48px 60px 63px;
-    -moz-transform: rotate(22deg);
-    -ms-transform: rotate(22deg);
-    -o-transform: rotate(22deg);
 }
 
 .right::before {
@@ -389,8 +305,6 @@
     height: 28px;
     border: 6px solid #000;
     border-radius: 30px;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
 }`
     writecode('', code)
 }.call()
