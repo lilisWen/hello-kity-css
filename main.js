@@ -3,7 +3,7 @@
     $('.actions').on('click', 'button', (e) => {
         let $button = $(e.currentTarget)
         let speed = $button.attr('data-speed')
-        console.log(speed)
+        console.log(duraction)
         $button.addClass('active').siblings('.active').removeClass('active');;
         switch (speed) {
             case 'slow':
@@ -11,8 +11,10 @@
                 break;
             case 'normal':
                 duraction = 50
+                break;
             case 'fast':
                 duraction = 10
+                break;
             default:
                 break;
         }
