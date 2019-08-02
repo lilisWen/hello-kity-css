@@ -1,18 +1,38 @@
 ! function () {
+    var duraction = 50
+    $('.actions').on('click', 'button', (e) => {
+        let $button = $(e.currentTarget)
+        let speed = $button.attr('data-speed')
+        console.log(speed)
+        $button.addClass('active').siblings('.active').removeClass('active');;
+        switch (speed) {
+            case 'slow':
+                duraction = 100
+                break;
+            case 'normal':
+                duraction = 50
+            case 'fast':
+                duraction = 10
+            default:
+                break;
+        }
+    })
+
     function writecode(prefix, code, fn) {
         let container = document.querySelector('#code')
         let styleTag = document.querySelector('#styleTag')
         let n = 0
-        let timer = setInterval(() => {
+        let timer = setTimeout(function run() {
             n += 1
             container.innerHTML = Prism.highlight(code.substring(0, n), Prism.languages.css);
             styleTag.innerHTML = code.substring(0, n)
             container.scrollTop = container.scrollHeight
             if (n >= code.length) {
-                window.clearInterval(timer)
-                // fn & fn.call()
+                fn & fn.call()
+            } else {
+                setTimeout(run, duraction)
             }
-        }, 10)
+        }, duraction)
     }
     let code = `/*让我们画一个hello kitty吧*/
 /*首先画脸*/
@@ -307,4 +327,5 @@
     border-radius: 30px;
 }`
     writecode('', code)
+
 }.call()
